@@ -10,7 +10,7 @@ Control Theory / Robotics / Autonomy / Machine Learning / Artificial Intelligenc
 
 ### Skills
 C / C++ • Java • Python • MATLAB • SQL  
-Embedded Systems • Control Theory • Machine Learning • Networking • CAD • 3D Printing  
+Machine Learning • Networking • CAD • 3D Printing  
 
 ---
 
