@@ -1,56 +1,51 @@
 # Portfolio
 
+---
+
 ## About
-Innovative problem solver through hands-on technical experience. 
-### Interests: 
-  Control Theory / Control Systems
-  Robotics
-  Autonomy
-  Machine Learning / Artificial Intelligence
-### Skills:
-  C / C++ • Java • Python • MATLAB • SQL  
-  Embedded Systems • Control Theory • Machine Learning • Networking • CAD • 3D Printing  
-  
+Innovative problem solver with hands-on experience across hardware, software, and machine learning.
+
+### Interests
+Control Theory / Robotics / Autonomy / Machine Learning / Artificial Intelligence
+
+### Skills
+C / C++ • Java • Python • MATLAB • SQL  
+Embedded Systems • Control Theory • Machine Learning • Networking • CAD • 3D Printing  
+
 ---
 
 ## Projects
 
-### While in college:
-1. *Nextcloud server (PHP, Linux, networking, Python, domain/https, Router, IP/Ethernet)
-  - Configured personal cloud using Linux, Apache, PHP, and domain HTTPS. Managed networking, IP routing, and secure access.
-3. *Wii/Xbox porting (FTP, LAN, 'hacking', porting to new hardware, emulating/VM)
-4. Upgraded rc boat (installing new hardware)
-5. Replaced rc car motor (installing new hardware)
-6. *Car mount (3D CAD, researching and understanding material properties)
-7. Subwoofers (power calculations, RMS, signals, electrical understanding)
+### College Projects
+- **Nextcloud Server** – Configured personal cloud using Linux, Apache, PHP, and domain HTTPS. Managed networking, IP routing, and secure access.  
+- **Wii/Xbox Porting** – Experimented with LAN-based file transfer, hardware porting, and emulation environments.  
+- **RC Boat and Car Upgrades** – Installed and tested new motor hardware, verified electrical and mechanical performance.  
+- **Car Mount (3D CAD)** – Designed and analyzed material properties for mechanical stability.  
+- **Subwoofer Design** – Applied RMS and power calculations for optimized signal and acoustic output.
 
-### Class Projects:
-1. Self balancing robot (embedded systems, Arduino, PID loops, sensors, motor control)
-  - PID control in Embedded C with Arduino and IMU. Stabilized 2-wheel platform using tuned proportional, integral, and derivative constants.
-3. Mechatronics project (LabVIEW, sensors, actuators, operation logic)
-4. Battery Senior Design (electrical testing and design)
+### Class Projects
+- **Self-Balancing Robot** – PID control in Embedded C with Arduino and IMU sensors. Stabilized two-wheel platform using tuned proportional, integral, and derivative constants.  
+- **Mechatronics Project** – Developed LabVIEW-based sensor and actuator control system with defined operation logic.  
+- **Battery Senior Design** – Led electrical testing, characterization, and design analysis of a battery system prototype.
 
-### Internship Experience (Summer '24):
-1. PLC (Virtual Machines, networking, Internet Protocol (IP), Ethernet, Ladder Logic, minor Visual Basic)
+### Internship (Summer '24)
+- **PLC Engineering** – Used virtual machines and ladder logic programming. Configured Ethernet/IP networking and integrated minor Visual Basic automation.
 
-### Summer '25:
-1. Tradingview indicators (PineScript)
-2. Savings and economic forecasting (economic modeling, macro trending, interestest rates, Excel)
-3. *Music ML (Python, Pandas, Scikit-Learn, Tensorflow, PyTorch, Classifiers, supervised/unsupervised)
-  - Audio feature extraction with Pandas and TensorFlow for supervised/unsupervised classification experiments.
-5. *Klipper (Linux, networking, robotics/control loops [open], sensor configurations)
-6. *Image and Video Upscaling (Machine Learning)
-7. 3D Printing (fine-tuning quality, 3D CAD moddeling)
-8. Lego SW:TCS modding (signal processing [ReShade], mod kits)
+### Summer '25 Projects
+- **TradingView Indicators** – Built and back-tested PineScript trading algorithms.  
+- **Economic Forecasting** – Modeled macroeconomic trends and interest rate effects using Excel and statistical methods.  
+- **Music ML** – Implemented supervised and unsupervised classifiers in TensorFlow and Scikit-Learn for audio feature extraction.  
+- **Klipper Configuration** – Optimized open control loops and sensor tuning for 3D printers using Linux and networking tools.  
+- **Image and Video Upscaling** – Applied ML-based super-resolution techniques for image enhancement.  
+- **3D Printing** – Performed hardware tuning and mechanical calibration for high-quality additive manufacturing.  
+- **Lego SW:TCS Modding** – Used signal processing tools and mod kits to alter visual rendering and game logic.
 
-### Prior to College:
-1. Root/dual-boot OS's on tablets, phones, computers.
-2. Lift, mod vehicles.
-3. Install car subwoofers.
-4. Design/build custom stereo system.
-5. 3D Prints.
-6. Custom bluetooth speakers, digitial signal processing.
-7. Mini bikes, motored bicycles.
+### Prior to College
+- Rooted and dual-booted multiple operating systems on mobile and desktop hardware.  
+- Lifted and modified vehicles; installed and tuned subwoofer systems.  
+- Designed and fabricated Bluetooth speakers with basic DSP integration.  
+- Built mini bikes and motorized bicycles.  
+- Early 3D printing and CAD experimentation.
 
 ---
 
