@@ -32,3 +32,4 @@
 - Designed and fabricated Bluetooth speakers with basic DSP integration.  
 - Built mini bikes and motorized bicycles.  
 - Early 3D printing and CAD experimentation.
+- Built RC cars and airplanes.
