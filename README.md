@@ -1,19 +1,5 @@
 # Portfolio
 
----
-
-## About
-Innovative problem solver with hands-on experience across hardware, software, and machine learning.
-
-### Interests
-Control Theory / Robotics / Autonomy / Machine Learning / Artificial Intelligence
-
-### Skills
-C / C++ • Java • Python • MATLAB • SQL  
-Machine Learning • Networking • CAD • 3D Printing  
-
----
-
 ## Projects
 
 ### College Projects
@@ -46,8 +32,3 @@ Machine Learning • Networking • CAD • 3D Printing
 - Designed and fabricated Bluetooth speakers with basic DSP integration.  
 - Built mini bikes and motorized bicycles.  
 - Early 3D printing and CAD experimentation.
-
----
-
-## Contact
-[GitHub](https://github.com/komo-248)
