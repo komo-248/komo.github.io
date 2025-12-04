@@ -3,7 +3,7 @@
 ## Projects
 
 ### EIT Projects
- - **Revit Excel Importer Tool - Created one-click solution for Revit to import Excel table using Python, Dynamo, and the Revit API. 
+- **Revit Excel Importer Tool** - Created one-click solution for Revit to import Excel table using Python, Dynamo, and the Revit API. 
 
 ### College Projects
 - **Nextcloud Server** – Configured personal cloud using Linux, Apache, PHP, and domain HTTPS. Managed networking, IP routing, and secure access.  
