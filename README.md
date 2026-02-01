@@ -28,6 +28,7 @@
 - **Image and Video Upscaling** – Applied ML-based super-resolution techniques for image enhancement.  
 - **3D Printing** – Performed hardware tuning and mechanical calibration for high-quality additive manufacturing.  
 - **Lego SW:TCS Modding** – Used signal processing tools and mod kits to alter visual rendering and game logic.
+- **ComfyUI Regenerative Upscale - Leveraged generative AI to restore, upscale, reconstruct through signal processing and open-source generative AI (Flux).
 
 ### Prior to College
 - Rooted and dual-booted multiple operating systems on mobile and desktop hardware.  
