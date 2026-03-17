@@ -1,6 +1,6 @@
 # Portfolio
 
-**[YouTube](https://www.youtube.com/@RC_Films_/videos)**
+**[YouTube](https://www.youtube.com/@RC_Films_/)**
 
 ## Projects
 
