@@ -11,7 +11,7 @@
 - **TradingView Indicators** – Built and back-tested algorithmic trading strategies in PineScript.
 - **Economic Forecasting** – Modeled macroeconomic trends and interest rate effects using Excel and statistical methods.
 - **PLC Engineering (Internship, Summer '24)** – Programmed ladder logic on virtual machines, configured Ethernet/IP networking, and integrated Visual Basic automation.
-- **Dal-Boot MacOS/Windows** - Rooted and dual-booted multiple operating systems on mobile and desktop hardware. **[Video 1](https://www.youtube.com/watch?v=mL2yJqQWXWY)** **[Video 2](https://www.youtube.com/watch?v=J5r1ERLGBps)**
+- **Dual-Boot MacOS/Windows** - Rooted and dual-booted multiple operating systems on mobile and desktop hardware. **[Video 1](https://www.youtube.com/watch?v=mL2yJqQWXWY)** **[Video 2](https://www.youtube.com/watch?v=J5r1ERLGBps)**
 - **Lego SW:TCS Modding** – Used signal processing tools and mod kits to alter visual rendering and game logic.
 - **Wii/Xbox Porting** – Experimented with LAN-based file transfer, hardware porting, and emulation environments.
 
