@@ -20,7 +20,7 @@
 ### Internship (Summer '24)
 - **PLC Engineering** – Used virtual machines and ladder logic programming. Configured Ethernet/IP networking and integrated minor Visual Basic automation.
 
-### Summer '25 Projects
+### Post Education Projects
 - **TradingView Indicators** – Built and back-tested PineScript trading algorithms.  
 - **Economic Forecasting** – Modeled macroeconomic trends and interest rate effects using Excel and statistical methods.  
 - **Music ML** – Implemented supervised and unsupervised classifiers in TensorFlow and Scikit-Learn for audio feature extraction.  
