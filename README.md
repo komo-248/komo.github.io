@@ -13,7 +13,7 @@
 - **Subwoofer Design** – Applied RMS and power calculations for optimized signal and acoustic output.
 
 ### Class Projects
-- **Self-Balancing Robot** – PID control in Embedded C with Arduino and IMU sensors. Stabilized two-wheel platform using tuned proportional, integral, and derivative constants.  
+- **[Self-Balancing Robot](https://github.com/komo-248/Self-Balancing-Robot/tree/main)** – PID control in Embedded C with Arduino and IMU sensors. Stabilized two-wheel platform using tuned proportional, integral, and derivative constants.  
 - **Mechatronics Project** – Developed LabVIEW-based sensor and actuator control system with defined operation logic.  
 - **Battery Senior Design** – Led electrical testing, characterization, and design analysis of a battery system prototype.
 
