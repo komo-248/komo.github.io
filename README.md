@@ -25,7 +25,7 @@
 ### Post Education Projects
 - **TradingView Indicators** – Built and back-tested PineScript trading algorithms.  
 - **Economic Forecasting** – Modeled macroeconomic trends and interest rate effects using Excel and statistical methods.  
-- **Music ML** – Implemented supervised and unsupervised classifiers in TensorFlow and Scikit-Learn for audio feature extraction.  
+- **[Music ML](https://github.com/komo-248/Music-ML-Playlist-Classifier)** – Implemented supervised and unsupervised classifiers in TensorFlow and Scikit-Learn for audio feature extraction.  
 - **Klipper Configuration** – Optimized open control loops and sensor tuning for 3D printers using Linux and networking tools.  
 - **Image and Video Upscaling** – Applied ML-based super-resolution techniques for image enhancement.  
 - **3D Printing** – Performed hardware tuning and mechanical calibration for high-quality additive manufacturing.  
