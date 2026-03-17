@@ -10,6 +10,9 @@
 - **TradingView Indicators** – Built and back-tested algorithmic trading strategies in PineScript.
 - **Economic Forecasting** – Modeled macroeconomic trends and interest rate effects using Excel and statistical methods.
 - **PLC Engineering (Internship, Summer '24)** – Programmed ladder logic on virtual machines, configured Ethernet/IP networking, and integrated Visual Basic automation.
+- - Rooted and dual-booted multiple operating systems on mobile and desktop hardware. **[Video 1](https://www.youtube.com/watch?v=mL2yJqQWXWY)** **[Video 2](https://www.youtube.com/watch?v=J5r1ERLGBps)**
+- **Lego SW:TCS Modding** – Used signal processing tools and mod kits to alter visual rendering and game logic.
+- **Wii/Xbox Porting** – Experimented with LAN-based file transfer, hardware porting, and emulation environments.
 
 ### Embedded & Controls
 - **[Self-Balancing Robot](https://github.com/komo-248/Self-Balancing-Robot/tree/main)** – Two-wheeled inverted pendulum with PID control in Embedded C. Used an MPU6050 IMU and L298N motor driver on Arduino; tuned proportional, integral, and derivative constants for stable balance.
@@ -26,9 +29,4 @@
 - **3D Printing** – Hardware tuning and mechanical calibration for high-quality additive manufacturing; early CAD experimentation.
 - **Subwoofer & Speaker Systems** – Applied RMS and power calculations for signal and acoustic output; designed and fabricated Bluetooth speakers with basic DSP integration; installed and tuned car audio systems.
 - **RC Vehicles** – Built RC cars, boats, and airplanes; upgraded motor hardware and verified electrical and mechanical performance.
-- **Wii/Xbox Porting** – Experimented with LAN-based file transfer, hardware porting, and emulation environments.
 - **Mini Bikes & Motorized Bicycles** – Built and modified small motorized vehicles; lifted and modified full-size vehicles.
-
-### Early Projects
-- Rooted and dual-booted multiple operating systems on mobile and desktop hardware. **[Video 1](https://www.youtube.com/watch?v=mL2yJqQWXWY)** **[Video 2](https://www.youtube.com/watch?v=J5r1ERLGBps)**
-- **Lego SW:TCS Modding** – Used signal processing tools and mod kits to alter visual rendering and game logic.
