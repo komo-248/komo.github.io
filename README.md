@@ -4,38 +4,31 @@
 
 ## Projects
 
-### EIT Projects
-- **[Revit Tool - Import Excel](https://github.com/komo-248/Revit-Tool---Import-Excel/tree/main)** - Created one-click solution for Revit to import Excel table using Python, Dynamo, and the Revit API. 
+### Engineering & Software
+- **[Revit Tool – Import Excel](https://github.com/komo-248/Revit-Tool---Import-Excel/tree/main)** – One-click Revit add-in to import Excel tables using Python, Dynamo, and the Revit API.
+- **[Music ML – Playlist Classifier](https://github.com/komo-248/Music-ML-Playlist-Classifier)** – Multi-label song classifier using Sentence-BERT embeddings and a multi-output MLP in TensorFlow and Scikit-Learn. Includes an OCR-based data recovery pipeline using Tesseract and MusicBrainz to reconstruct a corrupted 18,000-song library.
+- **TradingView Indicators** – Built and back-tested algorithmic trading strategies in PineScript.
+- **Economic Forecasting** – Modeled macroeconomic trends and interest rate effects using Excel and statistical methods.
+- **PLC Engineering (Internship, Summer '24)** – Programmed ladder logic on virtual machines, configured Ethernet/IP networking, and integrated Visual Basic automation.
 
-### College Projects
-- **[Nextcloud Server](https://github.com/komo-248/Nextcloud-Home-Server/tree/main)** – Configured personal cloud using Linux, Apache, PHP, and domain HTTPS. Managed networking, IP routing, and secure access.  
-- **Wii/Xbox Porting** – Experimented with LAN-based file transfer, hardware porting, and emulation environments.  
-- **RC Boat and Car Upgrades** – Installed and tested new motor hardware, verified electrical and mechanical performance.  
-- **[Car Mount (3D CAD)](https://github.com/komo-248/Car-Mount-DIN-Gap-Filler/tree/main)** – Designed and analyzed material properties for mechanical stability.  
-- **Subwoofer Design** – Applied RMS and power calculations for optimized signal and acoustic output.
+### Embedded & Controls
+- **[Self-Balancing Robot](https://github.com/komo-248/Self-Balancing-Robot/tree/main)** – Two-wheeled inverted pendulum with PID control in Embedded C. Used an MPU6050 IMU and L298N motor driver on Arduino; tuned proportional, integral, and derivative constants for stable balance.
+- **Mechatronics Project** – LabVIEW-based sensor and actuator control system with defined operation logic.
+- **Klipper Configuration** – Tuned open-loop control and sensor calibration for 3D printers using Linux.
 
-### Class Projects
-- **[Self-Balancing Robot](https://github.com/komo-248/Self-Balancing-Robot/tree/main)** – PID control in Embedded C with Arduino and IMU sensors. Stabilized two-wheel platform using tuned proportional, integral, and derivative constants.  
-- **Mechatronics Project** – Developed LabVIEW-based sensor and actuator control system with defined operation logic.  
+### Infrastructure & Systems
+- **[Nextcloud Server](https://github.com/komo-248/Nextcloud-Home-Server/tree/main)** – Self-hosted personal cloud on an ARM SBC using Docker, Cloudflare Tunnel for HTTPS access without port forwarding, and Uptime Kuma for monitoring.
 - **Battery Senior Design** – Led electrical testing, characterization, and design analysis of a battery system prototype.
 
-### Internship (Summer '24)
-- **PLC Engineering** – Used virtual machines and ladder logic programming. Configured Ethernet/IP networking and integrated minor Visual Basic automation.
+### Hardware & Fabrication
+- **[Car Mount – 3D CAD](https://github.com/komo-248/Car-Mount-DIN-Gap-Filler/tree/main)** – Designed a PETG-CF double DIN gap filler with integrated Offroam ball mount in Fusion 360; selected material for dashboard thermal environment and tuned tolerances for press fit.
+- **Image and Video Upscaling / ComfyUI** – Applied ML-based super-resolution and generative AI (Flux) for image restoration and reconstruction.
+- **3D Printing** – Hardware tuning and mechanical calibration for high-quality additive manufacturing; early CAD experimentation.
+- **Subwoofer & Speaker Systems** – Applied RMS and power calculations for signal and acoustic output; designed and fabricated Bluetooth speakers with basic DSP integration; installed and tuned car audio systems.
+- **RC Vehicles** – Built RC cars, boats, and airplanes; upgraded motor hardware and verified electrical and mechanical performance.
+- **Wii/Xbox Porting** – Experimented with LAN-based file transfer, hardware porting, and emulation environments.
+- **Mini Bikes & Motorized Bicycles** – Built and modified small motorized vehicles; lifted and modified full-size vehicles.
 
-### Post Education Projects
-- **TradingView Indicators** – Built and back-tested PineScript trading algorithms.  
-- **Economic Forecasting** – Modeled macroeconomic trends and interest rate effects using Excel and statistical methods.  
-- **[Music ML](https://github.com/komo-248/Music-ML-Playlist-Classifier)** – Implemented supervised and unsupervised classifiers in TensorFlow and Scikit-Learn for audio feature extraction.  
-- **Klipper Configuration** – Optimized open control loops and sensor tuning for 3D printers using Linux and networking tools.  
-- **Image and Video Upscaling** – Applied ML-based super-resolution techniques for image enhancement.  
-- **3D Printing** – Performed hardware tuning and mechanical calibration for high-quality additive manufacturing.  
-- **Lego SW:TCS Modding** – Used signal processing tools and mod kits to alter visual rendering and game logic.
-- **ComfyUI Regenerative Upscale** - Leveraged generative AI to restore, upscale, reconstruct through signal processing and open-source generative AI (Flux).
-
-### Prior to College
+### Early Projects
 - Rooted and dual-booted multiple operating systems on mobile and desktop hardware. **[Video 1](https://www.youtube.com/watch?v=mL2yJqQWXWY)** **[Video 2](https://www.youtube.com/watch?v=J5r1ERLGBps)**
-- Lifted and modified vehicles; installed and tuned subwoofer systems.  
-- Designed and fabricated Bluetooth speakers with basic DSP integration.  
-- Built mini bikes and motorized bicycles.  
-- Early 3D printing and CAD experimentation.
-- Built RC cars and airplanes.
+- **Lego SW:TCS Modding** – Used signal processing tools and mod kits to alter visual rendering and game logic.
