@@ -31,7 +31,7 @@
 - **ComfyUI Regenerative Upscale** - Leveraged generative AI to restore, upscale, reconstruct through signal processing and open-source generative AI (Flux).
 
 ### Prior to College
-- Rooted and dual-booted multiple operating systems on mobile and desktop hardware.  **[Video 1]](https://www.youtube.com/watch?v=mL2yJqQWXWY) **[Video 2](https://www.youtube.com/watch?v=J5r1ERLGBps)
+- Rooted and dual-booted multiple operating systems on mobile and desktop hardware. [Video 1](https://www.youtube.com/watch?v=mL2yJqQWXWY) [Video 2](https://www.youtube.com/watch?v=J5r1ERLGBps)
 - Lifted and modified vehicles; installed and tuned subwoofer systems.  
 - Designed and fabricated Bluetooth speakers with basic DSP integration.  
 - Built mini bikes and motorized bicycles.  
