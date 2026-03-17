@@ -1,5 +1,7 @@
 # Portfolio
 
+[YouTube](https://www.youtube.com/@RC_Films_/videos)
+
 ## Projects
 
 ### EIT Projects
