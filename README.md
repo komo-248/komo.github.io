@@ -7,10 +7,11 @@
 ### Engineering & Software
 - **[Revit Tool – Import Excel](https://github.com/komo-248/Revit-Tool---Import-Excel/tree/main)** – One-click Revit add-in to import Excel tables using Python, Dynamo, and the Revit API.
 - **[Music ML – Playlist Classifier](https://github.com/komo-248/Music-ML-Playlist-Classifier)** – Multi-label song classifier using Sentence-BERT embeddings and a multi-output MLP in TensorFlow and Scikit-Learn. Includes an OCR-based data recovery pipeline using Tesseract and MusicBrainz to reconstruct a corrupted 18,000-song library.
+- **Image and Video Upscaling / ComfyUI** – Applied ML-based super-resolution and generative AI (Flux) for image restoration and reconstruction.
 - **TradingView Indicators** – Built and back-tested algorithmic trading strategies in PineScript.
 - **Economic Forecasting** – Modeled macroeconomic trends and interest rate effects using Excel and statistical methods.
 - **PLC Engineering (Internship, Summer '24)** – Programmed ladder logic on virtual machines, configured Ethernet/IP networking, and integrated Visual Basic automation.
-- - Rooted and dual-booted multiple operating systems on mobile and desktop hardware. **[Video 1](https://www.youtube.com/watch?v=mL2yJqQWXWY)** **[Video 2](https://www.youtube.com/watch?v=J5r1ERLGBps)**
+- **Dal-Boot MacOS/Windows** - Rooted and dual-booted multiple operating systems on mobile and desktop hardware. **[Video 1](https://www.youtube.com/watch?v=mL2yJqQWXWY)** **[Video 2](https://www.youtube.com/watch?v=J5r1ERLGBps)**
 - **Lego SW:TCS Modding** – Used signal processing tools and mod kits to alter visual rendering and game logic.
 - **Wii/Xbox Porting** – Experimented with LAN-based file transfer, hardware porting, and emulation environments.
 
@@ -23,9 +24,8 @@
 - **[Nextcloud Server](https://github.com/komo-248/Nextcloud-Home-Server/tree/main)** – Self-hosted personal cloud on an ARM SBC using Docker, Cloudflare Tunnel for HTTPS access without port forwarding, and Uptime Kuma for monitoring.
 - **Battery Senior Design** – Led electrical testing, characterization, and design analysis of a battery system prototype.
 
-### Hardware & Fabrication
+### Hardware (Electro-Mechanical) & Fabrication
 - **[Car Mount – 3D CAD](https://github.com/komo-248/Car-Mount-DIN-Gap-Filler/tree/main)** – Designed a PETG-CF double DIN gap filler with integrated Offroam ball mount in Fusion 360; selected material for dashboard thermal environment and tuned tolerances for press fit.
-- **Image and Video Upscaling / ComfyUI** – Applied ML-based super-resolution and generative AI (Flux) for image restoration and reconstruction.
 - **3D Printing** – Hardware tuning and mechanical calibration for high-quality additive manufacturing; early CAD experimentation.
 - **Subwoofer & Speaker Systems** – Applied RMS and power calculations for signal and acoustic output; designed and fabricated Bluetooth speakers with basic DSP integration; installed and tuned car audio systems.
 - **RC Vehicles** – Built RC cars, boats, and airplanes; upgraded motor hardware and verified electrical and mechanical performance.
