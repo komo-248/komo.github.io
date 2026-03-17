@@ -9,7 +9,7 @@
 - **[Nextcloud Server](https://github.com/komo-248/Nextcloud-Home-Server/tree/main)** – Configured personal cloud using Linux, Apache, PHP, and domain HTTPS. Managed networking, IP routing, and secure access.  
 - **Wii/Xbox Porting** – Experimented with LAN-based file transfer, hardware porting, and emulation environments.  
 - **RC Boat and Car Upgrades** – Installed and tested new motor hardware, verified electrical and mechanical performance.  
-- **Car Mount (3D CAD)** – Designed and analyzed material properties for mechanical stability.  
+- **[Car Mount (3D CAD)](https://github.com/komo-248/Car-Mount-DIN-Gap-Filler/tree/main)** – Designed and analyzed material properties for mechanical stability.  
 - **Subwoofer Design** – Applied RMS and power calculations for optimized signal and acoustic output.
 
 ### Class Projects
