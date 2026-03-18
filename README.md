@@ -7,7 +7,7 @@
 ### Engineering & Software
 - **[Revit Tool – Import Excel](https://github.com/komo-248/Revit-Tool---Import-Excel/tree/main)** – One-click Revit add-in to import Excel tables using Python, Dynamo, and the Revit API.
 - **[Music ML – Playlist Classifier](https://github.com/komo-248/Music-ML-Playlist-Classifier)** – Multi-label song classifier using Sentence-BERT embeddings and a multi-output MLP in TensorFlow and Scikit-Learn. Includes an OCR-based data recovery pipeline using Tesseract and MusicBrainz to reconstruct a corrupted 18,000-song library.
-- **Image and Video Upscaling / ComfyUI** – Applied ML-based super-resolution and generative AI (Flux) for image restoration and reconstruction.
+- **Image and Video [Upscaling](https://github.com/komo-248/Video-Upscaling-FFmpeg-Upscayl) / [ComfyUI](https://github.com/komo-248/ComfyUI-Flux-Regenerative-Upscale)** – Applied ML-based super-resolution and generative AI (Flux) for image restoration and reconstruction.
 - **TradingView Indicators** – Built and back-tested algorithmic trading strategies in PineScript.
 - **Economic Forecasting** – Modeled macroeconomic trends and interest rate effects using Excel and statistical methods.
 - **PLC Engineering (Internship, Summer '24)** – Programmed ladder logic on virtual machines, configured Ethernet/IP networking, and integrated Visual Basic automation.
