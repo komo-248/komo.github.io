@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #f7f6f3;
+      --surface: #ffffff;
+      --border: #e4e2dc;
+      --text: #1a1917;
+      --muted: #7a7870;
+      --accent: #2a5caa;
+      --accent-soft: #eef2fa;
+      --tag-bg: #eeece8;
+      --tag-text: #4a4840;
+      --mono: 'DM Mono', monospace;
+      --sans: 'DM Sans', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: var(--sans);
+      background: var(--bg);
+      color: var(--text);
+      font-size: 15px;
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    /* ── LAYOUT ── */
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 0 32px;
+    }
+
+    /* ── HEADER ── */
+    header {
+      padding: 72px 0 56px;
+      border-bottom: 1px solid var(--border);
+      opacity: 0;
+      animation: fadeUp 0.6s ease forwards;
+    }
+
+    .header-inner {
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+      gap: 32px;
+      flex-wrap: wrap;
+    }
+
+    .name-block h1 {
+      font-family: var(--mono);
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 400;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+      color: var(--text);
+    }
+
+    .name-block h1 span {
+      color: var(--accent);
+    }
+
+    .name-block p {
+      margin-top: 10px;
+      color: var(--muted);
+      font-size: 14px;
+      font-weight: 300;
+      max-width: 420px;
+    }
+
+    .header-links {
+      display: flex;
+      gap: 18px;
+      align-items: center;
+      flex-shrink: 0;
+    }
+
+    .header-links a {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: color 0.2s;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .header-links a:hover { color: var(--accent); }
+
+    .header-links a svg {
+      width: 14px;
+      height: 14px;
+      stroke: currentColor;
+      fill: none;
+    }
+
+    /* ── SECTION LABEL ── */
+    .section-label {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 24px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .section-label::after {
+      content: '';
+      flex: 1;
+      height: 1px;
+      background: var(--border);
+    }
+
+    /* ── FILTER ── */
+    .filter-row {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+
+    .filter-btn {
+      font-family: var(--mono);
+      font-size: 11px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      padding: 5px 12px;
+      border-radius: 3px;
+      border: 1px solid var(--border);
+      background: transparent;
+      color: var(--muted);
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+
+    .filter-btn:hover {
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .filter-btn.active {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: #fff;
+    }
+
+    /* ── PROJECT GRID ── */
+    .projects-section {
+      padding: 56px 0;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+      gap: 1px;
+      background: var(--border);
+      border: 1px solid var(--border);
+    }
+
+    .project-card {
+      background: var(--surface);
+      padding: 28px 28px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      transition: background 0.15s;
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+    }
+
+    .project-card:hover {
+      background: #fdfcfa;
+    }
+
+    .project-card.hidden {
+      display: none;
+    }
+
+    .card-top {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 8px;
+    }
+
+    .project-title {
+      font-size: 15px;
+      font-weight: 500;
+      color: var(--text);
+      line-height: 1.3;
+    }
+
+    .card-link {
+      flex-shrink: 0;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+      margin-top: 1px;
+    }
+
+    .card-link:hover { color: var(--accent); }
+
+    .card-link svg {
+      width: 15px;
+      height: 15px;
+      stroke: currentColor;
+      fill: none;
+    }
+
+    .project-desc {
+      font-size: 13.5px;
+      color: var(--muted);
+      line-height: 1.55;
+      font-weight: 300;
+    }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+      margin-top: auto;
+      padding-top: 4px;
+    }
+
+    .tag {
+      font-family: var(--mono);
+      font-size: 10.5px;
+      letter-spacing: 0.03em;
+      padding: 3px 8px;
+      border-radius: 2px;
+      background: var(--tag-bg);
+      color: var(--tag-text);
+    }
+
+    .tag.accent {
+      background: var(--accent-soft);
+      color: var(--accent);
+    }
+
+    /* ── EXPERIENCE STRIP ── */
+    .experience-section {
+      padding: 0 0 56px;
+    }
+
+    .exp-item {
+      padding: 20px 0;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      gap: 24px;
+      align-items: baseline;
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+    }
+
+    .exp-item:first-of-type {
+      border-top: 1px solid var(--border);
+    }
+
+    .exp-date {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      min-width: 80px;
+      letter-spacing: 0.04em;
+    }
+
+    .exp-title {
+      font-size: 14px;
+      font-weight: 500;
+    }
+
+    .exp-sub {
+      font-size: 13px;
+      color: var(--muted);
+      font-weight: 300;
+      margin-top: 2px;
+    }
+
+    /* ── FOOTER ── */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 28px 0;
+      opacity: 0;
+      animation: fadeUp 0.5s ease forwards;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-inner span {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.04em;
+    }
+
+    .footer-inner a {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      text-decoration: none;
+      letter-spacing: 0.04em;
+      transition: color 0.15s;
+    }
+
+    .footer-inner a:hover { color: var(--accent); }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(12px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    .project-card:nth-child(1)  { animation-delay: 0.05s; }
+    .project-card:nth-child(2)  { animation-delay: 0.10s; }
+    .project-card:nth-child(3)  { animation-delay: 0.15s; }
+    .project-card:nth-child(4)  { animation-delay: 0.20s; }
+    .project-card:nth-child(5)  { animation-delay: 0.25s; }
+    .project-card:nth-child(6)  { animation-delay: 0.30s; }
+    .project-card:nth-child(7)  { animation-delay: 0.35s; }
+    .project-card:nth-child(8)  { animation-delay: 0.40s; }
+    .project-card:nth-child(9)  { animation-delay: 0.45s; }
+    .project-card:nth-child(10) { animation-delay: 0.50s; }
+    .project-card:nth-child(11) { animation-delay: 0.55s; }
+    .project-card:nth-child(12) { animation-delay: 0.60s; }
+
+    .exp-item:nth-child(1) { animation-delay: 0.1s; }
+    .exp-item:nth-child(2) { animation-delay: 0.2s; }
+    .exp-item:nth-child(3) { animation-delay: 0.3s; }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 600px) {
+      .container { padding: 0 20px; }
+      .project-grid { grid-template-columns: 1fr; }
+      .header-inner { flex-direction: column; align-items: flex-start; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <div class="name-block">
+        <h1>komo<span>-248</span></h1>
+        <p>Controls, signals, and systems — with a broad foundation in software, hardware, and ML.</p>
+      </div>
+      <nav class="header-links">
+        <a href="https://github.com/komo-248" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          GitHub
+        </a>
+        <a href="https://www.youtube.com/@RC_Films_/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" stroke-width="1.6"/></svg>
+          YouTube
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- PROJECTS -->
+  <section class="projects-section">
+    <div class="section-label">Projects</div>
+
+    <div class="filter-row">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="controls">Controls & Embedded</button>
+      <button class="filter-btn" data-filter="software">Software & ML</button>
+      <button class="filter-btn" data-filter="systems">Systems & Infra</button>
+      <button class="filter-btn" data-filter="hardware">Hardware & Fabrication</button>
+    </div>
+
+    <div class="project-grid" id="grid">
+
+      <!-- CONTROLS -->
+      <div class="project-card" data-category="controls">
+        <div class="card-top">
+          <div class="project-title">Self-Balancing Robot</div>
+          <a class="card-link" href="https://github.com/komo-248/Self-Balancing-Robot/tree/main" target="_blank" rel="noopener" title="View repo">
+            <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <p class="project-desc">Two-wheeled inverted pendulum with PID control in Embedded C. MPU6050 IMU + L298N motor driver on Arduino; manually tuned PID constants for stable balance.</p>
+        <div class="tag-row">
+          <span class="tag accent">Controls</span>
+          <span class="tag">Embedded C</span>
+          <span class="tag">PID</span>
+          <span class="tag">Arduino</span>
+          <span class="tag">IMU</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="controls">
+        <div class="card-top">
+          <div class="project-title">PLC Engineering</div>
+        </div>
+        <p class="project-desc">Programmed ladder logic on virtual machines, configured Ethernet/IP networking, and integrated Visual Basic automation during a controls engineering internship (Summer '24).</p>
+        <div class="tag-row">
+          <span class="tag accent">Controls</span>
+          <span class="tag">Ladder Logic</span>
+          <span class="tag">Ethernet/IP</span>
+          <span class="tag">VB Automation</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="controls">
+        <div class="card-top">
+          <div class="project-title">Mechatronics System</div>
+        </div>
+        <p class="project-desc">LabVIEW-based sensor and actuator control system with defined operation logic — integrating real-time data acquisition with physical actuation.</p>
+        <div class="tag-row">
+          <span class="tag accent">Controls</span>
+          <span class="tag">LabVIEW</span>
+          <span class="tag">Sensors</span>
+          <span class="tag">Actuators</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="controls">
+        <div class="card-top">
+          <div class="project-title">Klipper 3D Printer Configuration</div>
+        </div>
+        <p class="project-desc">Tuned open-loop control and sensor calibration for 3D printers using Linux — PID bed and hotend tuning, input shaping, and pressure advance calibration.</p>
+        <div class="tag-row">
+          <span class="tag accent">Controls</span>
+          <span class="tag">Open-loop</span>
+          <span class="tag">Calibration</span>
+          <span class="tag">Linux</span>
+        </div>
+      </div>
+
+      <!-- SOFTWARE & ML -->
+      <div class="project-card" data-category="software">
+        <div class="card-top">
+          <div class="project-title">Music ML — Playlist Classifier</div>
+          <a class="card-link" href="https://github.com/komo-248/Music-ML-Playlist-Classifier" target="_blank" rel="noopener" title="View repo">
+            <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <p class="project-desc">Multi-label song classifier using Sentence-BERT embeddings and a multi-output MLP in TensorFlow. Includes an OCR-based data recovery pipeline (Tesseract + MusicBrainz) to reconstruct a corrupted 18,000-song library.</p>
+        <div class="tag-row">
+          <span class="tag accent">ML</span>
+          <span class="tag">TensorFlow</span>
+          <span class="tag">BERT</span>
+          <span class="tag">Scikit-Learn</span>
+          <span class="tag">OCR</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="software">
+        <div class="card-top">
+          <div class="project-title">Image & Video Upscaling</div>
+          <a class="card-link" href="https://github.com/komo-248/Video-Upscaling-FFmpeg-Upscayl" target="_blank" rel="noopener" title="View repo">
+            <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <p class="project-desc">ML-based super-resolution and generative AI (Flux) for image restoration and reconstruction. FFmpeg pipeline for video; ComfyUI workflow for regenerative upscaling.</p>
+        <div class="tag-row">
+          <span class="tag accent">ML</span>
+          <span class="tag">FFmpeg</span>
+          <span class="tag">ComfyUI</span>
+          <span class="tag">Generative AI</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="software">
+        <div class="card-top">
+          <div class="project-title">Revit Tool — Import Excel</div>
+          <a class="card-link" href="https://github.com/komo-248/Revit-Tool---Import-Excel/tree/main" target="_blank" rel="noopener" title="View repo">
+            <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <p class="project-desc">One-click Revit add-in to import Excel tables directly into drawings using Python, Dynamo, and the Revit API.</p>
+        <div class="tag-row">
+          <span class="tag accent">Software</span>
+          <span class="tag">Python</span>
+          <span class="tag">Dynamo</span>
+          <span class="tag">Revit API</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="software">
+        <div class="card-top">
+          <div class="project-title">TradingView Indicators</div>
+        </div>
+        <p class="project-desc">Built and back-tested algorithmic trading strategies in PineScript — signal generation, entry/exit logic, and quantitative performance evaluation.</p>
+        <div class="tag-row">
+          <span class="tag accent">Software</span>
+          <span class="tag">PineScript</span>
+          <span class="tag">Backtesting</span>
+          <span class="tag">Signal Processing</span>
+        </div>
+      </div>
+
+      <!-- SYSTEMS -->
+      <div class="project-card" data-category="systems">
+        <div class="card-top">
+          <div class="project-title">Nextcloud Home Server</div>
+          <a class="card-link" href="https://github.com/komo-248/Nextcloud-Home-Server/tree/main" target="_blank" rel="noopener" title="View repo">
+            <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <p class="project-desc">Self-hosted personal cloud on an ARM SBC using Docker, Cloudflare Tunnel for HTTPS without port forwarding, and Uptime Kuma for monitoring.</p>
+        <div class="tag-row">
+          <span class="tag accent">Infra</span>
+          <span class="tag">Docker</span>
+          <span class="tag">Linux</span>
+          <span class="tag">Networking</span>
+          <span class="tag">ARM</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="systems">
+        <div class="card-top">
+          <div class="project-title">Dual-Boot macOS / Windows</div>
+          <a class="card-link" href="https://www.youtube.com/watch?v=mL2yJqQWXWY" target="_blank" rel="noopener" title="Watch video">
+            <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <p class="project-desc">Rooted and dual-booted multiple operating systems on mobile and desktop hardware. Documented on YouTube.</p>
+        <div class="tag-row">
+          <span class="tag accent">Systems</span>
+          <span class="tag">OS</span>
+          <span class="tag">Bootloader</span>
+          <span class="tag">Hardware</span>
+        </div>
+      </div>
+
+      <!-- HARDWARE -->
+      <div class="project-card" data-category="hardware">
+        <div class="card-top">
+          <div class="project-title">Battery Senior Design</div>
+        </div>
+        <p class="project-desc">Led electrical testing, characterization, and design analysis of a battery system prototype — including capacity analysis, charge curves, and thermal considerations.</p>
+        <div class="tag-row">
+          <span class="tag accent">Hardware</span>
+          <span class="tag">Electrical Testing</span>
+          <span class="tag">Characterization</span>
+          <span class="tag">Power Systems</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="hardware">
+        <div class="card-top">
+          <div class="project-title">Car Mount — 3D CAD</div>
+          <a class="card-link" href="https://github.com/komo-248/Car-Mount-DIN-Gap-Filler/tree/main" target="_blank" rel="noopener" title="View repo">
+            <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+        <p class="project-desc">PETG-CF double DIN gap filler with integrated ball mount designed in Fusion 360. Material selected for dashboard thermal environment; tolerances tuned for press fit.</p>
+        <div class="tag-row">
+          <span class="tag accent">Hardware</span>
+          <span class="tag">Fusion 360</span>
+          <span class="tag">3D Printing</span>
+          <span class="tag">PETG-CF</span>
+        </div>
+      </div>
+
+      <div class="project-card" data-category="hardware">
+        <div class="card-top">
+          <div class="project-title">Subwoofer & Speaker Systems</div>
+        </div>
+        <p class="project-desc">RMS and power calculations for acoustic output; designed and fabricated Bluetooth speakers with basic DSP integration; installed and tuned car audio systems.</p>
+        <div class="tag-row">
+          <span class="tag accent">Hardware</span>
+          <span class="tag">DSP</span>
+          <span class="tag">Acoustics</span>
+          <span class="tag">Power Calcs</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="experience-section">
+    <div class="section-label">Experience</div>
+
+    <div class="exp-item">
+      <div class="exp-date">Summer '24</div>
+      <div>
+        <div class="exp-title">PLC Engineering Intern</div>
+        <div class="exp-sub">Ladder logic, Ethernet/IP networking, Visual Basic automation</div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">Ongoing</div>
+      <div>
+        <div class="exp-title">Senior Design — Battery Systems</div>
+        <div class="exp-sub">Electrical testing, characterization, and prototype design analysis</div>
+      </div>
+    </div>
+
+    <div class="exp-item">
+      <div class="exp-date">Ongoing</div>
+      <div>
+        <div class="exp-title">Independent Projects</div>
+        <div class="exp-sub">Controls, embedded systems, ML, fabrication — documented on GitHub and YouTube</div>
+      </div>
+    </div>
+
+  </section>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-inner">
+      <span>komo-248</span>
+      <a href="https://github.com/komo-248" target="_blank" rel="noopener">github.com/komo-248</a>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const btns = document.querySelectorAll('.filter-btn');
+  const cards = document.querySelectorAll('.project-card');
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      btns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+
+      const f = btn.dataset.filter;
+      cards.forEach(card => {
+        if (f === 'all' || card.dataset.category === f) {
+          card.classList.remove('hidden');
+        } else {
+          card.classList.add('hidden');
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
