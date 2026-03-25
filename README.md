@@ -24,7 +24,6 @@
 
 ### Hardware (Electro-Mechanical) & Fabrication
 - **[Car Mount – 3D CAD](https://github.com/komo-248/Car-Mount-DIN-Gap-Filler/tree/main)** – Designed a PETG-CF double DIN gap filler with integrated Offroam ball mount in Fusion 360; selected material for dashboard thermal environment and tuned tolerances for press fit.
-- **3D Printing** – Hardware tuning and mechanical calibration for high-quality additive manufacturing; early CAD experimentation.
 - **Subwoofer & Speaker Systems** – Applied RMS and power calculations for signal and acoustic output; designed and fabricated Bluetooth speakers with basic DSP integration; installed and tuned car audio systems.
 - **RC Vehicles** – Built RC cars, boats, and airplanes; upgraded motor hardware and verified electrical and mechanical performance.
 - **Mini Bikes & Motorized Bicycles** – Built and modified small motorized vehicles; lifted and modified full-size vehicles.
