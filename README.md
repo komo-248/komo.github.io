@@ -12,7 +12,7 @@
 - **Economic Forecasting** – Modeled macroeconomic trends and interest rate effects using Excel and statistical methods.
 - **Dual-Boot [MacOS & Windows](https://www.youtube.com/watch?v=mL2yJqQWXWY&list=PLrhJkJth0z7D-TWsuhuCNmSseFrOvDau-) / Root [Kindle](https://www.youtube.com/watch?v=21b5Fl-FEaE&list=PLrhJkJth0z7CgrlmpJuvwZQv4nh9kYs9z) & [Android](https://www.youtube.com/watch?v=33WGyko7fpc&list=PLrhJkJth0z7CKTV6iJDrmMs4TPQPre-Lf)** - Rooted and dual-booted multiple operating systems on mobile and desktop hardware.
 - **Lego SW:TCS Modding** – Used signal processing tools (ReShade) and mod kits to alter visual rendering and game logic.
-- **Wii/Xbox Porting** – Experimented with LAN-based file transfer, hardware porting, and emulation environments.
+- **Wii/Xbox Emulation** – Experimented with LAN-based file transfer, hardware porting, and emulation environments.
 
 ### Embedded & Controls
 - **[Self-Balancing Robot](https://github.com/komo-248/Self-Balancing-Robot/tree/main)** – Two-wheeled inverted pendulum with PID control in Embedded C. Used an MPU6050 IMU and L298N motor driver on Arduino; tuned proportional, integral, and derivative constants for stable balance.
