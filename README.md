@@ -17,7 +17,7 @@
 ### Embedded & Controls
 - **[Self-Balancing Robot](https://github.com/komo-248/Self-Balancing-Robot/tree/main)** – Two-wheeled inverted pendulum with PID control in Embedded C. Used an MPU6050 IMU and L298N motor driver on Arduino; tuned proportional, integral, and derivative constants for stable balance.
 - **Mechatronics Project** – LabVIEW-based sensor and actuator control system with defined operation logic.
-- **[Klipper Configuration](https://github.com/komo-248/Klipper-Installation-Process-and-Methodology/blob/main/README.md)** – Tuned open-loop control and sensor calibration for 3D printers using Linux.
+- **[Klipper Configuration](https://github.com/komo-248/Klipper-Installation-Process-and-Methodology/tree/main)** – Tuned open-loop control and sensor calibration for 3D printers using Linux.
 
 ### Infrastructure & Systems
 - **[Nextcloud Server](https://github.com/komo-248/Nextcloud-Home-Server/tree/main)** – Self-hosted personal cloud on an ARM SBC using Docker, Cloudflare Tunnel for HTTPS access without port forwarding, and Uptime Kuma for monitoring.
