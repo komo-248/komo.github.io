@@ -23,7 +23,7 @@
 
 - **[Nextcloud Server](https://github.com/komo-248/Nextcloud-Home-Server/tree/main)** `college` – Self-hosted personal cloud on an ARM SBC using Docker, Cloudflare Tunnel for HTTPS without port forwarding, and Uptime Kuma for monitoring.
 - **Dual-Boot [macOS & Windows](https://www.youtube.com/watch?v=mL2yJqQWXWY&list=PLrhJkJth0z7D-TWsuhuCNmSseFrOvDau-) / Root [Kindle](https://www.youtube.com/watch?v=21b5Fl-FEaE&list=PLrhJkJth0z7CgrlmpJuvwZQv4nh9kYs9z) & [Android](https://www.youtube.com/watch?v=33WGyko7fpc&list=PLrhJkJth0z7CKTV6iJDrmMs4TPQPre-Lf)** `high school` – Rooted and dual-booted multiple operating systems on mobile and desktop hardware.
-- **[Revit Tool - Import Excel](https://github.com/komo-248/Revit-Tool---Import-Excel/tree/main)** `post-education` – One-click Revit add-in to import Excel tables using Python, Dynamo, and the Revit API.
+- **[Revit Tool — Import Excel](https://github.com/komo-248/Revit-Tool---Import-Excel/tree/main)** `post-education` – One-click Revit add-in to import Excel tables using Python, Dynamo, and the Revit API.
 - **Economic Forecasting** `post-education` – Modeled macroeconomic trends and interest rate effects using Excel and statistical methods.
 - **Wii/Xbox Emulation** `college` – LAN-based file transfer, hardware porting, and emulation environments.
 
