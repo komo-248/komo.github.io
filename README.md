@@ -6,8 +6,6 @@
 
 ## Projects
 
-Ordered by relevance to controls, signals, and systems engineering.
-
 ### Controls & Embedded Systems
 
 - **[Self-Balancing Robot](https://github.com/komo-248/Self-Balancing-Robot/tree/main)** `college` – Two-wheeled inverted pendulum with PID control in Embedded C. MPU6050 IMU and L298N motor driver on Arduino; manually tuned proportional, integral, and derivative constants for stable balance.
