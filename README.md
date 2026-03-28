@@ -4,6 +4,19 @@
 
 ---
 
+## Experience
+
+**Electrical Engineer in Training** `current`
+Practicing EE under professional supervision toward PE licensure. FE Electrical & Computer exam passed.
+
+**PLC Integrator** `full-time, post-education`
+Full-time controls integration role — PLC programming, system commissioning, and industrial automation.
+
+**HMI Programmer** `internship, summer 2024`
+Designed and developed HMI interfaces during a summer internship in industrial controls.
+
+---
+
 ## Projects
 
 ### Controls & Embedded Systems
@@ -26,4 +39,4 @@
 ### Hardware & Fabrication
 
 - **[Car Mount — 3D CAD](https://github.com/komo-248/Car-Mount-DIN-Gap-Filler/tree/main)** `college / post-education` – PETG-CF double DIN gap filler with integrated Offroam ball mount designed in Fusion 360; material selected for dashboard thermal environment, tolerances tuned for press fit.
-- **Subwoofer & Speaker Systems** `high school / college / post-education` – RMS and power calculations for acoustic output; designed and fabricated Bluetooth speakers with DSP integration;
+- **Subwoofer & Speaker Systems** `high school / college / post-education` – RMS and power calculations for acoustic output; designed and fabricated Bluetooth speakers with DSP integration; installed and tuned car audio systems.
