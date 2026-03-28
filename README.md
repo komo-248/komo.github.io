@@ -14,7 +14,7 @@
 
 ### Signal Processing & ML
 
-- **[Image and Video Upscaling](https://github.com/komo-248/ComfyUI-Flux-Regenerative-Upscale)** `post-education` – ML-based super-resolution and diffusion-based regenerative upscaling. FFmpeg frame extraction pipeline and Real-ESRGAN upscaling; ComfyUI workflow using FLUX.1-fill-dev with a layered signal processing chain (Canny, FBCNN, bilateral filtering) for mask construction and inpainting.
+- **[Regenerative Image and Video Upscaling](https://github.com/komo-248/ComfyUI-Flux-Regenerative-Upscale)** `post-education` – ML-based super-resolution and diffusion-based regenerative upscaling. FFmpeg frame extraction pipeline and Real-ESRGAN upscaling; ComfyUI workflow using FLUX.1-fill-dev with a layered signal processing chain (Canny, FBCNN, bilateral filtering) for mask construction and inpainting.
 - **[Music ML — Playlist Classifier](https://github.com/komo-248/Music-ML-Playlist-Classifier)** `post-education` – Multi-label classifier using Sentence-BERT embeddings and a multi-output MLP in TensorFlow and Scikit-Learn. Includes an OCR-based data recovery pipeline (Tesseract + MusicBrainz) to reconstruct a corrupted 18,000-song library.
 
 ### Software & Infrastructure
