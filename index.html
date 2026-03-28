@@ -123,12 +123,11 @@
       font-family: var(--mono);
       font-size: 11px;
       color: var(--muted);
-      min-width: 100px;
+      min-width: 110px;
       letter-spacing: 0.04em;
       flex-shrink: 0;
     }
 
-    .exp-body {}
     .exp-title { font-size: 14px; font-weight: 500; }
     .exp-sub { font-size: 13px; color: var(--muted); font-weight: 300; margin-top: 2px; }
 
@@ -185,7 +184,6 @@
     }
 
     .card-title-block { display: flex; flex-direction: column; gap: 3px; }
-
     .project-title { font-size: 15px; font-weight: 500; color: var(--text); line-height: 1.3; }
 
     .edu-label {
@@ -196,7 +194,7 @@
       text-transform: uppercase;
     }
 
-    /* ── PROMINENT LINK BUTTONS ── */
+    /* ── LINK BUTTONS ── */
     .card-links { display: flex; gap: 6px; flex-shrink: 0; flex-wrap: wrap; justify-content: flex-end; }
 
     .card-link {
@@ -216,12 +214,7 @@
       white-space: nowrap;
     }
 
-    .card-link:hover {
-      background: var(--accent);
-      color: #fff;
-      border-color: var(--accent);
-    }
-
+    .card-link:hover { background: var(--accent); color: #fff; border-color: var(--accent); }
     .card-link svg { width: 12px; height: 12px; stroke: currentColor; fill: none; flex-shrink: 0; }
 
     .project-desc { font-size: 13.5px; color: var(--muted); line-height: 1.55; font-weight: 300; }
@@ -242,7 +235,6 @@
 
     /* ── FOOTER ── */
     footer { border-top: 1px solid var(--border); padding: 28px 0; opacity: 0; animation: fadeUp 0.5s ease forwards; }
-
     .footer-inner { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; }
     .footer-inner span { font-family: var(--mono); font-size: 11px; color: var(--muted); letter-spacing: 0.04em; }
     .footer-inner a { font-family: var(--mono); font-size: 11px; color: var(--muted); text-decoration: none; letter-spacing: 0.04em; transition: color 0.15s; }
@@ -268,13 +260,12 @@
     .project-card:nth-child(8)  { animation-delay: 0.40s; }
     .project-card:nth-child(9)  { animation-delay: 0.45s; }
     .project-card:nth-child(10) { animation-delay: 0.50s; }
-    .project-card:nth-child(11) { animation-delay: 0.55s; }
-    .project-card:nth-child(12) { animation-delay: 0.60s; }
 
     @media (max-width: 600px) {
       .container { padding: 0 20px; }
       .project-grid { grid-template-columns: 1fr; }
       .header-inner { flex-direction: column; align-items: flex-start; }
+      .filter-btn { font-size: 10px; padding: 4px 9px; }
     }
   </style>
 </head>
@@ -297,7 +288,7 @@
           <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.95-1.96C18.88 4 12 4 12 4s-6.88 0-8.59.46A2.78 2.78 0 0 0 1.46 6.42 29 29 0 0 0 1 12a29 29 0 0 0 .46 5.58 2.78 2.78 0 0 0 1.95 1.96C5.12 20 12 20 12 20s6.88 0 8.59-.46a2.78 2.78 0 0 0 1.96-1.96A29 29 0 0 0 23 12a29 29 0 0 0-.46-5.58z"/><polygon points="9.75 15.02 15.5 12 9.75 8.98 9.75 15.02" stroke-width="1.6"/></svg>
           YouTube
         </a>
-        <a href="https://github.com/komo-248/komo.github.io/tree/main" target="_blank" rel="noopener">
+        <a href="https://github.com/komo-248/komo.github.io/blob/main/README.md" target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/><polyline points="10 9 9 9 8 9"/></svg>
           README
         </a>
@@ -311,7 +302,7 @@
 
     <div class="exp-item">
       <div class="exp-date">Current</div>
-      <div class="exp-body">
+      <div>
         <div class="exp-title">Electrical Engineer in Training</div>
         <div class="exp-sub">FE Electrical &amp; Computer exam passed — practicing toward PE licensure</div>
       </div>
@@ -319,7 +310,7 @@
 
     <div class="exp-item">
       <div class="exp-date">Post-Education</div>
-      <div class="exp-body">
+      <div>
         <div class="exp-title">PLC Integrator</div>
         <div class="exp-sub">PLC programming, system commissioning, and industrial automation</div>
       </div>
@@ -327,7 +318,7 @@
 
     <div class="exp-item">
       <div class="exp-date">Summer 2024</div>
-      <div class="exp-body">
+      <div>
         <div class="exp-title">HMI Programmer — Internship</div>
         <div class="exp-sub">HMI interface design and development in industrial controls</div>
       </div>
@@ -338,17 +329,18 @@
   <!-- PROJECTS -->
   <section class="projects-section">
     <div class="section-label">Projects</div>
+
     <div class="filter-row">
       <button class="filter-btn active" data-filter="all">All</button>
-      <button class="filter-btn" data-filter="controls">Controls & Embedded</button>
-      <button class="filter-btn" data-filter="software">Software & ML</button>
-      <button class="filter-btn" data-filter="systems">Systems & Infra</button>
-      <button class="filter-btn" data-filter="hardware">Hardware & Fabrication</button>
+      <button class="filter-btn" data-filter="controls">Controls &amp; Embedded Systems</button>
+      <button class="filter-btn" data-filter="signal">Signal Processing &amp; ML</button>
+      <button class="filter-btn" data-filter="software">Software &amp; Infrastructure</button>
+      <button class="filter-btn" data-filter="hardware">Hardware &amp; Fabrication</button>
     </div>
 
     <div class="project-grid" id="grid">
 
-      <!-- CONTROLS -->
+      <!-- CONTROLS & EMBEDDED SYSTEMS -->
       <div class="project-card" data-category="controls">
         <div class="card-top">
           <div class="card-title-block">
@@ -362,7 +354,7 @@
             </a>
           </div>
         </div>
-        <p class="project-desc">Two-wheeled inverted pendulum with PID control in Embedded C. MPU6050 IMU + L298N motor driver on Arduino; manually tuned PID constants for stable balance.</p>
+        <p class="project-desc">Two-wheeled inverted pendulum with PID control in Embedded C. MPU6050 IMU and L298N motor driver on Arduino; manually tuned proportional, integral, and derivative constants for stable balance.</p>
         <div class="tag-row">
           <span class="tag accent">Controls</span>
           <span class="tag">Embedded C</span>
@@ -375,8 +367,8 @@
       <div class="project-card" data-category="controls">
         <div class="card-top">
           <div class="card-title-block">
-            <div class="project-title">Klipper 3D Printer Configuration</div>
-            <div class="edu-label">Post</div>
+            <div class="project-title">Klipper Configuration</div>
+            <div class="edu-label">Post-Education</div>
           </div>
           <div class="card-links">
             <a class="card-link" href="https://github.com/komo-248/Klipper-Installation-Process-and-Methodology/tree/main" target="_blank" rel="noopener">
@@ -398,11 +390,11 @@
       <div class="project-card" data-category="controls">
         <div class="card-top">
           <div class="card-title-block">
-            <div class="project-title">Mechatronics System</div>
+            <div class="project-title">Mechatronics Project</div>
             <div class="edu-label">College</div>
           </div>
         </div>
-        <p class="project-desc">LabVIEW-based sensor and actuator control system with defined operation logic — real-time data acquisition integrated with physical actuation.</p>
+        <p class="project-desc">LabVIEW-based sensor and actuator control system with defined operation logic — real-time data acquisition with physical actuation.</p>
         <div class="tag-row">
           <span class="tag accent">Controls</span>
           <span class="tag">LabVIEW</span>
@@ -411,38 +403,34 @@
         </div>
       </div>
 
-      <!-- SOFTWARE & ML -->
-      <div class="project-card" data-category="software">
+      <!-- SIGNAL PROCESSING & ML -->
+      <div class="project-card" data-category="signal">
         <div class="card-top">
           <div class="card-title-block">
-            <div class="project-title">Regenerative Image &amp; Video Upscaling</div>
-            <div class="edu-label">Post</div>
+            <div class="project-title">Regenerative Image and Video Upscaling</div>
+            <div class="edu-label">Post-Education</div>
           </div>
           <div class="card-links">
-            <a class="card-link" href="https://github.com/komo-248/Video-Upscaling-FFmpeg-Upscayl" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              FFmpeg
-            </a>
             <a class="card-link" href="https://github.com/komo-248/ComfyUI-Flux-Regenerative-Upscale" target="_blank" rel="noopener">
               <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              ComfyUI
+              Repo
             </a>
           </div>
         </div>
-        <p class="project-desc">ML-based super-resolution and diffusion-based regenerative upscaling. FFmpeg + Real-ESRGAN pipeline; ComfyUI workflow using FLUX.1-fill-dev with a layered signal processing chain (Canny, FBCNN, bilateral filter) for mask construction and inpainting.</p>
+        <p class="project-desc">ML-based super-resolution and diffusion-based regenerative upscaling. FFmpeg frame extraction pipeline and Real-ESRGAN upscaling; ComfyUI workflow using FLUX.1-fill-dev with a layered signal processing chain (Canny, FBCNN, bilateral filtering) for mask construction and inpainting.</p>
         <div class="tag-row">
-          <span class="tag accent">ML</span>
-          <span class="tag">Signal Processing</span>
+          <span class="tag accent">Signal Processing</span>
+          <span class="tag">ML</span>
           <span class="tag">ComfyUI</span>
           <span class="tag">Generative AI</span>
         </div>
       </div>
 
-      <div class="project-card" data-category="software">
+      <div class="project-card" data-category="signal">
         <div class="card-top">
           <div class="card-title-block">
             <div class="project-title">Music ML — Playlist Classifier</div>
-            <div class="edu-label">Post</div>
+            <div class="edu-label">Post-Education</div>
           </div>
           <div class="card-links">
             <a class="card-link" href="https://github.com/komo-248/Music-ML-Playlist-Classifier" target="_blank" rel="noopener">
@@ -451,7 +439,7 @@
             </a>
           </div>
         </div>
-        <p class="project-desc">Multi-label classifier using Sentence-BERT embeddings and a multi-output MLP in TensorFlow. OCR-based data recovery pipeline (Tesseract + MusicBrainz) to reconstruct a corrupted 18,000-song library.</p>
+        <p class="project-desc">Multi-label classifier using Sentence-BERT embeddings and a multi-output MLP in TensorFlow and Scikit-Learn. Includes an OCR-based data recovery pipeline (Tesseract + MusicBrainz) to reconstruct a corrupted 18,000-song library.</p>
         <div class="tag-row">
           <span class="tag accent">ML</span>
           <span class="tag">TensorFlow</span>
@@ -461,33 +449,11 @@
         </div>
       </div>
 
+      <!-- SOFTWARE & INFRASTRUCTURE -->
       <div class="project-card" data-category="software">
         <div class="card-top">
           <div class="card-title-block">
-            <div class="project-title">Revit Tool — Import Excel</div>
-            <div class="edu-label">Post</div>
-          </div>
-          <div class="card-links">
-            <a class="card-link" href="https://github.com/komo-248/Revit-Tool---Import-Excel/tree/main" target="_blank" rel="noopener">
-              <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
-              Repo
-            </a>
-          </div>
-        </div>
-        <p class="project-desc">One-click Revit add-in to import Excel tables directly into drawings using Python, Dynamo, and the Revit API.</p>
-        <div class="tag-row">
-          <span class="tag accent">Software</span>
-          <span class="tag">Python</span>
-          <span class="tag">Dynamo</span>
-          <span class="tag">Revit API</span>
-        </div>
-      </div>
-
-      <!-- SYSTEMS -->
-      <div class="project-card" data-category="systems">
-        <div class="card-top">
-          <div class="card-title-block">
-            <div class="project-title">Nextcloud Home Server</div>
+            <div class="project-title">Nextcloud Server</div>
             <div class="edu-label">College</div>
           </div>
           <div class="card-links">
@@ -507,10 +473,10 @@
         </div>
       </div>
 
-      <div class="project-card" data-category="systems">
+      <div class="project-card" data-category="software">
         <div class="card-top">
           <div class="card-title-block">
-            <div class="project-title">Dual-Boot macOS / Windows &amp; Device Rooting</div>
+            <div class="project-title">Dual-Boot macOS &amp; Windows / Root Kindle &amp; Android</div>
             <div class="edu-label">High School</div>
           </div>
           <div class="card-links">
@@ -537,12 +503,34 @@
         </div>
       </div>
 
-      <!-- HARDWARE -->
+      <div class="project-card" data-category="software">
+        <div class="card-top">
+          <div class="card-title-block">
+            <div class="project-title">Revit Tool — Import Excel</div>
+            <div class="edu-label">Post-Education</div>
+          </div>
+          <div class="card-links">
+            <a class="card-link" href="https://github.com/komo-248/Revit-Tool---Import-Excel/tree/main" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" stroke-width="1.6"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+              Repo
+            </a>
+          </div>
+        </div>
+        <p class="project-desc">One-click Revit add-in to import Excel tables using Python, Dynamo, and the Revit API.</p>
+        <div class="tag-row">
+          <span class="tag accent">Software</span>
+          <span class="tag">Python</span>
+          <span class="tag">Dynamo</span>
+          <span class="tag">Revit API</span>
+        </div>
+      </div>
+
+      <!-- HARDWARE & FABRICATION -->
       <div class="project-card" data-category="hardware">
         <div class="card-top">
           <div class="card-title-block">
             <div class="project-title">Car Mount — 3D CAD</div>
-            <div class="edu-label">College / Post</div>
+            <div class="edu-label">College / Post-Education</div>
           </div>
           <div class="card-links">
             <a class="card-link" href="https://github.com/komo-248/Car-Mount-DIN-Gap-Filler/tree/main" target="_blank" rel="noopener">
@@ -551,7 +539,7 @@
             </a>
           </div>
         </div>
-        <p class="project-desc">PETG-CF double DIN gap filler with integrated ball mount designed in Fusion 360. Material selected for dashboard thermal environment; tolerances tuned for press fit.</p>
+        <p class="project-desc">PETG-CF double DIN gap filler with integrated Offroam ball mount designed in Fusion 360; material selected for dashboard thermal environment, tolerances tuned for press fit.</p>
         <div class="tag-row">
           <span class="tag accent">Hardware</span>
           <span class="tag">Fusion 360</span>
@@ -564,7 +552,7 @@
         <div class="card-top">
           <div class="card-title-block">
             <div class="project-title">Subwoofer &amp; Speaker Systems</div>
-            <div class="edu-label">High School / College / Post</div>
+            <div class="edu-label">High School / College / Post-Education</div>
           </div>
         </div>
         <p class="project-desc">RMS and power calculations for acoustic output; designed and fabricated Bluetooth speakers with DSP integration; installed and tuned car audio systems.</p>
@@ -573,36 +561,6 @@
           <span class="tag">DSP</span>
           <span class="tag">Acoustics</span>
           <span class="tag">Power Calcs</span>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="hardware">
-        <div class="card-top">
-          <div class="card-title-block">
-            <div class="project-title">RC Vehicles</div>
-            <div class="edu-label">High School</div>
-          </div>
-        </div>
-        <p class="project-desc">Built RC cars, boats, and airplanes; upgraded motor hardware and verified electrical and mechanical performance.</p>
-        <div class="tag-row">
-          <span class="tag accent">Hardware</span>
-          <span class="tag">Electronics</span>
-          <span class="tag">Mechanical</span>
-        </div>
-      </div>
-
-      <div class="project-card" data-category="hardware">
-        <div class="card-top">
-          <div class="card-title-block">
-            <div class="project-title">Mini Bikes &amp; Motorized Bicycles</div>
-            <div class="edu-label">High School</div>
-          </div>
-        </div>
-        <p class="project-desc">Built and modified small motorized vehicles; lifted and modified full-size vehicles.</p>
-        <div class="tag-row">
-          <span class="tag accent">Hardware</span>
-          <span class="tag">Mechanical</span>
-          <span class="tag">Fabrication</span>
         </div>
       </div>
 
