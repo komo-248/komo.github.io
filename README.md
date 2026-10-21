@@ -6,7 +6,7 @@
 
 ## Experience
 
-**Design Engineer** 'full-time, current' AV, security, networking, and building automation design. Tools: Revit, Smart v8, EASE, SketchUp, AutoCAD, Vectorworks ConnectCAD, AVIXA standards.
+**Design Engineer** `full-time, current` AV, security, networking, and building automation design. Tools: Revit, Smart v8, EASE, SketchUp, AutoCAD, Vectorworks ConnectCAD, AVIXA standards.
 
 **Electrical Engineer in Training** `full-time, post-education`
 Practicing EE under professional supervision toward PE licensure. FE Electrical \& Computer exam passed.
